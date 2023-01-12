@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
+.bar-progress
+
+/* Generales*/
+
+.btn-infor{
+    font-size: 1.5rem;
+    margin: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.titulo{
+    margin-top: 100px;
+    color: aqua;
+    font-size: 3rem;
+    padding: 15px 0;
+    font-family: 'Signika Negative', sans-serif;    
+}
+
+
+.texto{
+    font-size: 1rem;
+    padding: 10px 0;
+    text-align: justify;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+/* navBar */
+
+.navbar{
+    font-family: 'Signika Negative', sans-serif;
+    background-color: rgb(37, 0, 71);
+    font-size: x-large;
+    box-shadow: 2px 10px 100px rgb(37, 26, 63);
+    padding: 0px;
+}
+
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.navbar-collapse li{
+    padding: 0px;
+
+    margin-left: 80px;
+}
+
+.nav-link:hover{
+    transition: all 0.2s ease;
+    border-radius: 25px;
+    background-color: rgb(166, 89, 166);
+}
+
+/* media 🧦 */
+
+@media screen and (max-width :800px){
+    .navbar-brand{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width :800px) {
+    .image-hero{
+        max-width: 600px;
+    }    
+
+}
+
+@media(hover:none){
+    .proyecto .overlay{
+        opacity: 1;
+        bottom: 20px;
+        width: 150px;
+    }
+
+}
+
+/* Hero */
+
+.hero{
+    background-color:purple;
+    min-height: 450px;
+    text-align: center;
+}
+
+
+.presentacion{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: rgb(119, 56, 119);
+    text-align: start;
+}
+
+.presentacion h3{
+    color: #ffffff;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.hero-principal {
+    padding-top: 3rem;
+    padding-bottom: 0;
+}
+
+.me{
+ width: 200px;
+ height: 200px;
+ border-radius: 50%;
+ margin: 50px;
+ margin-top: 50px;   
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.image-hero{
+    
+    display: inline;
+    margin: 10px;
+}
+/* Sobre mi */
+
+.seccion-oscura{
+    /* background-color:purple; */
+    background-color: darkmagenta;
+    color: whitesmoke;
+
+}
+
+.titulo-me{
+    color: #95ff00;
+    text-shadow: -2px -2px 3px #000000, 2px 2px 3px rgb(0, 0, 0), -2px 2px 3px rgb(0, 0, 0), 2px -2px 10px #000;
+    font-size: 3rem;
+    font-family: 'Signika Negative', sans-serif;  
+}
+
+.about{
+    height: 810px;
+}
+
+.about .container{
+    background-color: rgb(119, 56, 119);
+    border-radius: 25px;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+.sobre-mi p{
+    font-size: 17px;
+}
+
+.btn-arch{
+    display: inline;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: 'Signika Negative', sans-serif;    
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Proyectos */
+
+.proyectos{
+    background-color: purple;
+    padding-bottom: 200px;
+
+}
+
+
+.proyectos img{
+    background-color: rgb(66, 0, 66);
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyecto-contenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.seccion-clara{
+    background-color: darkmagenta;
+    color: black;
+}
+
+.descripcion{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.overlay{    
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+.proyecto:hover img{
+    opacity: 0.8;
+}
+
+.proyecto{
+    position: relative;
+}
+
+.overlay{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+}
+
+.overlay svg{
+
+    color: black;
+    font: optional 60xp;
+    width: 100%;
+}
+
+
+.rotacion svg{
+    animation-name: icon;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-block;
+}
+
+
+@keyframes icon{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.overlay .icono-contendeor{
+    display: flex;
+    margin-bottom: 40px;
+
+
+}
+
+.overlay a{
+    color: black;
+    font: optional 60xp;
+    margin: 10px;
+    width: 100%;
+}
+.btn-infor{
+    margin-bottom: 80px;
+    
+}
+
+
+
+
+
+/* contacto */
+
+.contacto .container{
+    
+    top: 100px;
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+
+}
+
+.contacto .rectangulo{
+    background-color: rgb(66, 0, 66);
+    margin-top: -8rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    box-shadow: 2px 2px 5px 1px;
+    
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button{
+    margin: 1rem;
+    width: 110px;
+    height: 50px;
+    padding: 0em;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+
+.hablemos{
+    color: aqua;
+    font-size: 50px;
+    font-family: 'Signika Negative', sans-serif;    
+
+}
+/* skills */
+
+.skills{
+    gap: 20px;
+}
+
+
+.skill{
+    position: absolute;
+}
+.bar-progress{
+    position: relative;
+    top: 20px;
+    left: 10px;
+    height: 30px;
+    width: 440px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.progress{
+    display:flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 5px;
+    left: 5px;
+    height: 20px;
+    width: 490px;
+    border-radius: 50px;
+    background-color:#A8FF2E;
+}
+
+/* skills */
+
+.tecnos{
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.tecnos p{
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    font-family: 'Bungee', cursive;
+    font-size: 200px;
+    color:rgb(255, 255, 255);
+}
+
+.tecno{
+    height: 144px;
+    background-color: rgb(166, 89, 166);
+    margin: 0%;
+    padding: 0%;
+}
+
+.images{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    display: flex;
+    padding: 10px;
+    height: 90px;
+    width:   100%;
+}
+
+.images img{
+    animation-name: icon;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono{
+    animation-name: icono;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-block;
+
+}    
+
+
+@keyframes icono{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
