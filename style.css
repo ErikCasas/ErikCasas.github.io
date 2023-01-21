@@ -35,6 +35,7 @@
 
 /* navBar */
 
+
 .navbar{
     font-family: 'Signika Negative', sans-serif;
     background-color: rgb(37, 0, 71);
@@ -56,6 +57,7 @@
     margin-left: 80px;
 }
 
+
 .nav-link:hover{
     transition: all 0.2s ease;
     border-radius: 25px;
@@ -67,6 +69,10 @@
 @media screen and (max-width :800px){
     .navbar-brand{
         display: none;
+    }
+
+    .container{
+        display: inline;
     }
 
 }
@@ -97,7 +103,6 @@
 
 
 .presentacion{
-    display: flex;
     justify-content:space-around;
     width: 100%;
     padding: 5px;
@@ -132,9 +137,7 @@ h1{
 }
 
 .me{
- width: 200px;
- height: 200px;
- border-radius: 50%;
+ height: 300px;
  margin: 50px;
  margin-top: 50px;   
 }
