@@ -105,7 +105,7 @@
 .presentacion{
     justify-content:space-around;
     width: 100%;
-    padding: 5px;
+    padding: 20px;
     border-radius: 25px;
     background-color: rgb(119, 56, 119);
     text-align: start;
@@ -207,6 +207,10 @@ h1{
 
 /* Proyectos */
 
+.aux{
+    margin-bottom: 20px;
+}
+
 .proyectos{
     background-color: purple;
     padding-bottom: 200px;
@@ -222,6 +226,7 @@ h1{
     border-radius: 25px;
     display: block;
     transition: all 0.2s ease;
+    
 }
 
 .proyecto-contenedor{
@@ -262,6 +267,9 @@ h1{
 
 .proyecto{
     position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .overlay{
@@ -422,6 +430,7 @@ h1{
     background-color: rgb(166, 89, 166);
     margin: 0%;
     padding: 0%;
+
 }
 
 .images{
